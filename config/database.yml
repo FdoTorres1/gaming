@@ -1,14 +1,14 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  host: localhost
   username: gaming
-  password: <%= ENV['GAMING_DATABASE_PASSWORD'] %>
+  password: <%= ENV['GAMING_PASSWORD'] %>
   pool: 5
 
 production:
   <<: *default
-  database: gaming_production
-  url: <%= ENV['DATABASE_URL'] %>
+  database: gamIng_production
 
 development:
   <<: *default
