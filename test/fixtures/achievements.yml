@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  match_id: 1
+  description: MyText
+  bonus_coins: 1
+  level: 1
+
+two:
+  match_id: 1
+  description: MyText
+  bonus_coins: 1
+  level: 1

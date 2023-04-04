@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: gaming
+  password: <%= ENV['GAMING_PASSWORD'] %>
+  pool: 5
+
+production:
+  <<: *default
+  database: gamIng_production
+
+development:
+  <<: *default
+  database: gamIng_development
+
+test:
+  <<: *default
+  database: gamIng_test
